@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+.homeTransition-appear {
+  opacity: 0;
+}
+
+.App {
+  font-family: "Quicksand", sans-serif;
+}
+
+span {
+  width: 100%;
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+}
+
+.homeTransition-appear.homeTransition-appear-active {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+#maincontainer {
+  background-color: white;
+  /* padding-top: 25px; */
+  padding: 0px 15px 25px 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin: 5px -4px 0px -4px;
+  /* margin-right: 20px; */
+  /* width: 100%; */
+}
+
+.container {
+  padding-top: 5px;
+}
+
+.jumbotronNavy {
+  padding: 10px 0px 10px 0px;
+  background-color: #001f3f;
+  margin: 20px 0px 10px 0px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#background {
+  background-image: url("./images/greystripes.png");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#headBlue {
+  color: white;
+  padding: 15px 0px 15px 0px;
+  margin: 15px 0px 15px 0px;
+}
+
+#navBar {
+  padding-top: 25px;
+  color: white;
+}
+
+#navBar li a,
+ul.nav li a:visited {
+  color: rgb(255, 255, 255) !important;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-family: "Quicksand", sans-serif;
+}
+
+.navbar-brand:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+#navy {
+  background-color: #001f3f;
+}
+
+.btn {
+  margin: 0px 10px 5px 0px;
+}
+
+.contact {
+  width: 100%;
+}
+
+#jumbotronFooter {
+  padding: 15px 0px 10px 0px;
+  color: white;
+  background-color: #001f3f;
+  margin: 15px -15px 15px -15px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  line-height: 2.1428571435;
+  text-align: center;
+  /* width: 100%; */
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+h1 {
+  color: white;
+  z-index: -3;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+h2 {
+  font-family: "Quicksand", sans-serif;
+  padding: 17px 0px 0px 28px;
+}
+
+h5 h6 {
+  color: white;
+}
+
+li {
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  /* flex: 50%; */
+  /* width: 10em; */
+  padding: 0px 4px 0px 4px;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.card-body {
+  height: 170px;
+  overflow: scroll;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  opacity: 0.9;
+}
+
+.nounderline {
+  text-decoration: none !important;
+}
+
+.card-body:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+.image-hover-opacity:hover {
+  opacity: 0.5;
+}
+
+.socialLinks:hover {
+  opacity: 0.7;
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+/* * {
+  transition: transform 0.2s; /* Animation */
+/* } */
+
+/* a:hover {
+  background-color: red;
+  transform: scale(1.5);
+} */
+
+/* a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  transform: scale(1.1);
+  color: #af1436;
+}
+
+a:active {
+  transform: scale(1.2);
+  color: blue;
+} */
+
+.demoPhoto {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  width: 100%;
+  object-fit: contain;
+  padding: 120px 10px 120px 10px;
+  margin: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+
+#usa {
+  background-image: url(./images/usa.jpg);
+}
+
+#train {
+  background-image: url(./images/train.jpg);
+}
+
+#gifs {
+  background-image: url(./images/gifs.jpg);
+}
+
+#spinal {
+  background-image: url(./images/spinal.jpg);
+}
+
+#hang {
+  background-image: url(./images/hang.png);
+}
+
+#frame {
+  background-image: url(./images/frame.png);
+}
+
+#times {
+  background-image: url(./images/times.png);
+}
+
+#nfl {
+  background-image: url(./images/nfl.jpg);
+}
+
+#bike {
+  background-image: url(./images/bike2.jpg);
+}
+.navy-background {
+  background-color: #001f3f;
+}
+
+.white {
+  color: white;
+}
+
+.frame {
+  height: 25px; /* equals max image height */
+  width: 160px;
+  white-space: nowrap; /* this is required unless you put the helper span closely near the img */
+  text-align: center;
+  margin: 1em 0;
+}
+
+.helper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icons {
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+  max-height: 25px;
+  max-width: 160px;
+}
+
+.d-flex {
+  align-items: center !important;
+  flex-wrap: wrap;
+  margin: 20px;
+  width: 60px;
+  height: 60px;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+#topicon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 200px 0px 25px 0px;
+}
+
+#bottomicon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 25px 0px 100px 0px;
+}
+
+.techIcon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 6px 28px 0px 28px;
+}
