@@ -24,7 +24,7 @@ const About = () => {
               alt={
                 "http://muscocenter.org/wp-content/uploads/2017/05/Copy-of-Val-Tenors-Vale-Rideout-768x512.jpg"
               }
-              style={{ margin: "0px 20px 15px 15px" }}
+              style={{ margin: "5px 20px 15px 15px" }}
             />
             Having been known as a 'gadgetologist' most of my life, I'm a web
             developer specializing in JAVASCRIPT and its myriad libraries and
