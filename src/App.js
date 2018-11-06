@@ -6,28 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/navbar";
 import Content from "./components/content";
 
-// constructor() {
-//   this.state: {
-//     opacity: 1
-// }
-
-// mouseEnter() {
-//     console.log('mouse enter')
-//     this.setState({opacity: 0.5})
-// }
-
-// mouseLeave() {
-//     console.log('mouse leave')
-//     this.setState({opacity: 1})
-// }
-
-//     render() {
-//       <div style={{opacity: this.state.opacity}}>
-//         <img src={src} onMouseEnter={::this.mouseEnter} onMouseLeave={::this.mouseLeave} />
-//       </div>
-//     }
-
-
 class App extends Component {
   render() {
     return (
@@ -40,18 +18,6 @@ class App extends Component {
             <div className="col-md-4 blue" />
             <div className="col-md-4 blue">
               <Navbar />
-
-              {/* <div className="row" id="navBar">
-                <li className="navbar-brand bounce slow">
-                  <Link to="/">about</Link>
-                </li>
-                <li className="navbar-brand" href="portfolio.html">
-                  <Link to="/projects">portfolio</Link>
-                </li>
-                <li className="navbar-brand" href="contact.html">
-                  <Link to="/contact">contact</Link>
-                </li>
-              </div> */}
             </div>
           </div>
           <div className="row" id="content">

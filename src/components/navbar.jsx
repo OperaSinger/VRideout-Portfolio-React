@@ -67,6 +67,4 @@ class Navbar extends React.Component {
   }
 }
 
-// render(<Navbar />, document.getElementById("navbar"));
-
 export default Navbar;
