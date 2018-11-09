@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { render } from "react-dom";
 import posed from "react-pose";
 import styled from "styled-components";
 

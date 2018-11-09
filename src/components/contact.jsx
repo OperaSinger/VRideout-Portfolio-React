@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-md-8">
             <form
-              role="form"
+              // role="form"
               action="mailto:vale@valerideout.com"
               method="post"
               enctype="text/plain"
