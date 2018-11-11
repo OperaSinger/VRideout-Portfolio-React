@@ -35,6 +35,7 @@ form {
 
 .container {
   padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .jumbotronNavy {
@@ -49,6 +50,12 @@ form {
   border: 1px solid black;
   border-radius: 5px;
 }
+
+/* #backVideo {
+  src: url("./video/bubbles.mov");
+  min-width: 100%;
+  min-height: 100%;
+} */
 
 #background {
   background-image: url("./images/greystripes.png");
@@ -165,6 +172,11 @@ li {
   opacity: 0.9;
   transform: scale(1.02);
   transition: 0.2s;
+}
+
+.card {
+  position: absolute;
+  left: -15px;
 }
 
 .image-hover-opacity:hover {
