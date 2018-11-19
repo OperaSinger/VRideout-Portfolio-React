@@ -1,16 +1,24 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import About from "./about";
 import Projects from "./projects";
 import Contact from "./contact";
+// import Testing from "./testing";
 
 const Content = () => {
   return (
-    <Switch>
-      <Route exact path="/" component={About} />
-      <Route path="/projects" component={Projects} />
-      <Route path="/contact" component={Contact} />
-    </Switch>
+    // <BrowserRouter basename={process.env.PUBLIC_URL}>
+
+    <BrowserRouter baseUrl="/VRideout-Portfolio-React">
+      <Switch>
+        <Route exact path={`${process.env.PUBLIC_URL}/`} component={About} />
+        <Route
+          path={`${process.env.PUBLIC_URL}/projects`}
+          component={Projects}
+        />
+        <Route path={`${process.env.PUBLIC_URL}/contact`} component={Contact} />
+      </Switch>
+    </BrowserRouter>
   );
 };
 
