@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, BrowserRouter } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import posed from "react-pose";
 import styled from "styled-components";
 
@@ -24,52 +24,50 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <BrowserRouter>
-        <div className="row justify-content-center" id="navBar">
-          <li className="navbar-brand bounce slow">
-            <Link to={`${process.env.PUBLIC_URL}/`} className="nounderline">
-              <Container id="smallScreen">
-                <StyledPage
-                  pose={this.state.hovering ? "hovered" : "idle"}
-                  onMouseEnter={() => this.setState({ hovering: true })}
-                  onMouseLeave={() => this.setState({ hovering: false })}
-                />
-                about
-              </Container>
-            </Link>
-          </li>
-          <li className="navbar-brand bounce slow">
-            <Link
-              to={`${process.env.PUBLIC_URL}/projects`}
-              className="nounderline"
-            >
-              <Container id="smallScreen">
-                <StyledPage
-                  pose={this.state.hovering ? "hovered" : "idle"}
-                  onMouseEnter={() => this.setState({ hovering: true })}
-                  onMouseLeave={() => this.setState({ hovering: false })}
-                />
-                portfolio
-              </Container>
-            </Link>
-          </li>
-          <li className="navbar-brand bounce slow">
-            <Link
-              to={`${process.env.PUBLIC_URL}/contact`}
-              className="nounderline"
-            >
-              <Container id="smallScreen">
-                <StyledPage
-                  pose={this.state.hovering ? "hovered" : "idle"}
-                  onMouseEnter={() => this.setState({ hovering: true })}
-                  onMouseLeave={() => this.setState({ hovering: false })}
-                />
-                contact
-              </Container>
-            </Link>
-          </li>
-        </div>
-      </BrowserRouter>
+      <div className="row justify-content-center" id="navBar">
+        <li className="navbar-brand bounce slow">
+          <NavLink to={`${process.env.PUBLIC_URL}/`} className="nounderline">
+            <Container id="smallScreen">
+              <StyledPage
+                pose={this.state.hovering ? "hovered" : "idle"}
+                onMouseEnter={() => this.setState({ hovering: true })}
+                onMouseLeave={() => this.setState({ hovering: false })}
+              />
+              about
+            </Container>
+          </NavLink>
+        </li>
+        <li className="navbar-brand bounce slow">
+          <NavLink
+            to={`${process.env.PUBLIC_URL}/projects`}
+            className="nounderline"
+          >
+            <Container id="smallScreen">
+              <StyledPage
+                pose={this.state.hovering ? "hovered" : "idle"}
+                onMouseEnter={() => this.setState({ hovering: true })}
+                onMouseLeave={() => this.setState({ hovering: false })}
+              />
+              portfolio
+            </Container>
+          </NavLink>
+        </li>
+        <li className="navbar-brand bounce slow">
+          <NavLink
+            to={`${process.env.PUBLIC_URL}/contact`}
+            className="nounderline"
+          >
+            <Container id="smallScreen">
+              <StyledPage
+                pose={this.state.hovering ? "hovered" : "idle"}
+                onMouseEnter={() => this.setState({ hovering: true })}
+                onMouseLeave={() => this.setState({ hovering: false })}
+              />
+              contact
+            </Container>
+          </NavLink>
+        </li>
+      </div>
     );
   }
 }
