@@ -88,37 +88,45 @@ const detailsRight = [
   }
 ];
 
+const itemsLeft = detailsLeft.map(detailLeft => (
+  <div
+    className="card demoPhoto view overlay"
+    key={detailLeft.id}
+    id={detailLeft.image}
+  >
+    <a href={detailLeft.link} className="links nounderline">
+      <div className="card-body portfolio-item">
+        <h5 className="card-title">{detailLeft.title}</h5>
+        <p className="card-text">
+          {detailLeft.description}
+          <br />
+          <strong>Tech: {detailLeft.tech}</strong>
+        </p>
+      </div>
+    </a>
+  </div>
+));
+
+const itemsRight = detailsRight.map(detailRight => (
+  <div
+    className="card demoPhoto view overlay"
+    key={detailRight.id}
+    id={detailRight.image}
+  >
+    <a href={detailRight.link} className="links nounderline">
+      <div className="card-body portfolio-item">
+        <h5 className="card-title">{detailRight.title}</h5>
+        <p className="card-text">
+          {detailRight.description}
+          <br />
+          <strong>Tech: {detailRight.tech}</strong>
+        </p>
+      </div>
+    </a>
+  </div>
+));
+
 const Projects = () => {
-  const itemsLeft = detailsLeft.map(detailLeft => (
-    <div className="card demoPhoto view overlay" id={detailLeft.image}>
-      <a href={detailLeft.link} className="links nounderline">
-        <div className="card-body portfolio-item">
-          <h5 className="card-title">{detailLeft.title}</h5>
-          <p className="card-text">
-            {detailLeft.description}
-            <br />
-            <strong>Tech: {detailLeft.tech}</strong>
-          </p>
-        </div>
-      </a>
-    </div>
-  ));
-
-  const itemsRight = detailsRight.map(detailRight => (
-    <div className="card demoPhoto view overlay" id={detailRight.image}>
-      <a href={detailRight.link} className="links nounderline">
-        <div className="card-body portfolio-item">
-          <h5 className="card-title">{detailRight.title}</h5>
-          <p className="card-text">
-            {detailRight.description}
-            <br />
-            <strong>Tech: {detailRight.tech}</strong>
-          </p>
-        </div>
-      </a>
-    </div>
-  ));
-
   return (
     <CSSTransitionGroup
       transitionName="homeTransition"
