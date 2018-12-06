@@ -6,6 +6,7 @@ import Navbar from "./components/navbar";
 import Content from "./components/content";
 
 class App extends Component {
+  x;
   render() {
     return (
       <BrowserRouter>

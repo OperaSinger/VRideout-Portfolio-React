@@ -14,14 +14,16 @@ const Contact = () => {
     >
       <section id="maincontainer">
         <div className="row">
+          <h2>Contact Vale</h2>
+        </div>
+        <div className="row">
           <div className="col-md-8">
             <form
               // role="form"
               action="mailto:vale@valerideout.com"
               method="post"
-              enctype="text/plain"
+              encType="text/plain"
             >
-              <p className="h4 text-center mb-4">Contact Vale</p>
               <label htmlFor="defaultFormContactNameEx" className="grey-text">
                 Your name
               </label>

@@ -6,11 +6,11 @@ import Contact from "./contact";
 
 const Content = () => {
   return (
-    <div>
+    <span>
       <Route exact path={`${process.env.PUBLIC_URL}/`} component={About} />
       <Route path={`${process.env.PUBLIC_URL}/projects`} component={Projects} />
       <Route path={`${process.env.PUBLIC_URL}/contact`} component={Contact} />
-    </div>
+    </span>
   );
 };
 
